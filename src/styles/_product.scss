@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    
 
     &__item {
         width : 17rem;
@@ -12,8 +13,8 @@
         text-align: center;
         font-size: large;
         text-transform: uppercase;
-        box-shadow: 0rem 1rem 1rem #cccccc
-     
+        box-shadow: 0rem 1rem 1rem #cccccc;
+        position: relative;
     }
 
     &__des {
@@ -41,5 +42,18 @@
         align-items: center;
         justify-content: center;
         padding: .8rem 0;
+    }
+
+    &__det:link,
+    &__det:visited {
+        position: absolute;
+        top: 0%;
+        right: -5%;
+        text-decoration: none;
+        color: #fff;
+        padding: .3rem 1rem;
+        background-color: black;
+        font-size: .8rem;
+        font-weight: bold;
     }
 }
